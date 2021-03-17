@@ -1,0 +1,27 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type dataSchemaObject {
+  id: String!
+  name: String!
+  email: String!
+  number: Int!
+  age: Float!
+}
+
+type Query {
+  getAllData: [dataSchemaObject!]!
+}
+
+type Mutation {
+  createList(input: InputValues!): dataSchemaObject!
+  deleteSchemaData(id: String!): dataSchemaObject!
+}
+
+input InputValues {
+  name: String!
+  email: String!
+  number: Int!
+  age: Int!
+}
